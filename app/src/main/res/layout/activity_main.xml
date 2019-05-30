@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="時間セット"
+        android:textSize="70sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <Button
+        android:id="@+id/next1"
+        android:layout_width="174dp"
+        android:layout_height="123dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="#1D8074"
+        android:onClick="next1"
+        android:text="次へ"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/koman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="328dp"
+        android:text=":"
+        android:textSize="150sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/hour"
+        android:layout_width="165dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingTop="5dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="00"
+        android:textColor="#1D8074"
+        android:textSize="140sp"
+        android:textStyle="bold"
+        android:maxLength="2"
+        app:layout_constraintEnd_toStartOf="@+id/koman"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/min"
+        android:layout_width="167dp"
+        android:layout_height="192dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="336dp"
+        android:ems="10"
+        android:inputType="number"
+        android:paddingTop="5dp"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:text="00"
+        android:textColor="#1D8074"
+        android:textSize="140sp"
+        android:textStyle="bold"
+        android:maxLength="2"
+        app:layout_constraintStart_toEndOf="@+id/koman"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
